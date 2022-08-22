@@ -9,8 +9,8 @@ function addCard(event){
     var photo = event.target[2].value;
     var description = event.target[3].value;
     
-    if(photo){
-        photo = "./images/map.jpg"
+    if(!photo){
+        photo = "./images/map.jpg";
     }
 
     buildNewCard(destination, location, photo, description);
