@@ -1,5 +1,6 @@
 var form = document.getElementById("destinationForm");
 var wishlist = document.getElementById("container");
+var viewHeading = document.getElementById("viewHeading");
 
 form.addEventListener("submit", addCard);
 
@@ -12,6 +13,8 @@ function addCard(event){
     if(!photo){
         photo = "./images/map.jpg";
     }
+
+
 
     buildNewCard(destination, location, photo, description);
     event.preventDefault();
@@ -63,6 +66,7 @@ function buildNewCard( destination, location, photo, description){
      card.appendChild(image);
      card.appendChild(cardBody);
      wishlist.appendChild(card);
+     viewHeading.innerText = "My WishList";
 
 }
 
