@@ -3,37 +3,39 @@
     <head>
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <div class="p-5 mb-4 bg-light rounded-3 text-center" >
+        <div id="bannerbackground" class="p-5 mb-5 text-center text-white"  style="background-image:url('./images/beach2.jpg'); background-position: 0% 50%; background-size:auto">
             <div class="container-fluid py-5">
-              <h1 class="display-5 fw-bold">Vacation Destinations WishList</h1>
-              <p>Found exciting places to visition on your next vacation? Use the form below to add them to your wishlist</p>
+              <h1 class="display-5 fw-bold text-bg-light" >Vacation Destinations WishList</h1>
+              <h5>Found exciting places to visition on your next vacation? Use the form below to add them to your wishlist</h5>
             </div>
         </div>
         <div class="row" style="margin: 0% 10% 0% 10%">
             <!--Form-->
             <div class="col-md-4">
-                <form id="destinationForm">
+                <form id="destinationForm" class="p-5 shadow-lg rounded-3 border border-secondary">
                     <!-- Destination-->
                     <div class="mb-3">
-                      <label for="destInput" class="form-label">Destination name</label>
+                      <label for="destInput" class="form-label"><i class="bi-map-fill p-2"></i>  Destination name</label> 
+                      
                       <input type="text" class="form-control" id="destInput" placeholder="Enter the name of the destination" required>
                     </div>
                     <!--Location-->
                     <div class="mb-3">
-                        <label for="locationInput" class="form-label">Location</label>
+                        <label for="locationInput" class="form-label"><i class="bi-airplane-fill p-2"></i>Location</label>
                         <input type="text" class="form-control" id="locationInput" placeholder="Where is it located?" required>
                     </div>
                     <!--Photo-->
+                   
                     <div class="mb-3">
-                        <label for="photoInput" class="form-label">Photo</label>
+                        <label for="photoInput" class="form-label"><i class="bi-camera-fill p-2"></i>Photo</label>
                         <input type="text" class="form-control" id="photoInput" placeholder="Enter an image url of the place">
                     </div>
                     <!--Description-->
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Description</label>
+                        <label for="exampleInputEmail1" class="form-label"><i class="bi-pencil-square p-2"></i>Description</label>
                         <textarea class="form-control" rows="3" id="descriptionInput" placeholder="Describe the location"></textarea>   
                     </div>
                     <button type="submit" class="btn btn-primary">Add to list</button>
@@ -42,7 +44,7 @@
    
             <!--View-->
             <div class="col-md-8" >
-                <h1 id="viewHeading" class="text-center"> Enter destination details</h1>
+                <h3 id="viewHeading" class="text-center"> Enter destination details</h3>
                  <div id="container" style="float:left"></div>
             </div>
         </div>
