@@ -14,9 +14,9 @@ function addCard(event){
         photo = "./images/map.jpg";
     }
 
-
-
-    buildNewCard(destination, location, photo, description);
+    var newCard = buildNewCard(destination, location, photo, description);
+    wishlist.appendChild(newCard);
+    viewHeading.innerText = "My WishList";
     event.preventDefault();
     resetForm(event.target);
 }
@@ -64,9 +64,8 @@ function buildNewCard( destination, location, photo, description){
      cardBody.appendChild(editButton);
      cardBody.appendChild(deleteButton);
      card.appendChild(image);
-     card.appendChild(cardBody);
-     wishlist.appendChild(card);
-     viewHeading.innerText = "My WishList";
+     card.appendChild(cardBody); 
+     return card;
 
 }
 
