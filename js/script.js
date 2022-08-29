@@ -105,7 +105,7 @@ async function editCard(event){
 
 // Deletes the card div object from the container element
 function deleteCard(event){
-    let card = event.target.parentNode.parentNode;
+    let card = event.target.parentNode.parentNode.parentNode;
     card.remove();
 }
 
