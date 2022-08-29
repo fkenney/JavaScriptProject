@@ -1,9 +1,8 @@
+import API_KEY from "./apikey";
+
 var form = document.getElementById("destinationForm");
 var wishlist = document.getElementById("container");
 var viewHeading = document.getElementById("viewHeading");
-
-const API_KEY ="YrGKkpykjAhHTJ8YM5BCjxR1iVWsyZs1CIzTMIA1Nug";
-
 
 form.addEventListener("submit", addCard);
 
