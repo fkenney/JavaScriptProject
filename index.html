@@ -4,6 +4,7 @@
         <!--Bootstrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
         <div id="bannerbackground" class="p-5 mb-5 text-center text-white"  style="background-image:url('./images/beach2.jpg'); background-position: 0% 50%; background-size:auto">
@@ -27,12 +28,6 @@
                         <label for="locationInput" class="form-label"><i class="bi-airplane-fill p-2"></i>Location</label>
                         <input type="text" class="form-control" id="locationInput" placeholder="Where is it located?" required>
                     </div>
-                    <!--Photo-->
-                   
-                    <div class="mb-3">
-                        <label for="photoInput" class="form-label"><i class="bi-camera-fill p-2"></i>Photo</label>
-                        <input type="text" class="form-control" id="photoInput" placeholder="Enter an image url of the place">
-                    </div>
                     <!--Description-->
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label"><i class="bi-pencil-square p-2"></i>Description</label>
@@ -43,9 +38,9 @@
             </div>
    
             <!--View-->
-            <div class="col-md-8" >
+            <div class="col-md-8">
                 <h3 id="viewHeading" class="text-center"> Enter destination details</h3>
-                 <div id="container" style="float:left"></div>
+                 <div id="container" class="row row-cols-1 row-cols-md-3 g-3"></div>
             </div>
         </div>
         <!--Scripts-->
