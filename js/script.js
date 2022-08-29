@@ -78,7 +78,7 @@ function resetForm(form){
         form.elements[i].value = "";
     }
 }
-
+ 
 // Updates the values on the card
 async function editCard(event){
     var newDestination = prompt("Please enter a new destination name");
@@ -101,7 +101,7 @@ async function editCard(event){
         var newImage = await getImageURL(newDestination, newLocation);
         card.childNodes[0].src = newImage;
     }
-}
+} 
 
 // Deletes the card div object from the container element
 function deleteCard(event){
