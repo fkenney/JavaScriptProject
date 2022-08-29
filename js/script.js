@@ -1,8 +1,9 @@
 import API_KEY from "./apikey.js"
 
-var form = document.getElementById("destinationForm");
-var wishlist = document.getElementById("container");
-var viewHeading = document.getElementById("viewHeading");
+const form = document.getElementById("destinationForm");
+const wishlist = document.getElementById("container");
+const viewHeading = document.getElementById("viewHeading");
+const default_image  = "./images/map.jpg";
 
 form.addEventListener("submit", addCard);
 
@@ -130,7 +131,7 @@ async function getImageURL(destination, location){
     }catch(error){
         //default image URL
         console.log(error);
-        image = "./images/map.jpg";
+        image = default_image;
     }
     finally{
         return image;
