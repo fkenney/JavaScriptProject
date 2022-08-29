@@ -1,4 +1,4 @@
-import API_KEY from "./apikey";
+import API_KEY from "./apikey.js"
 
 var form = document.getElementById("destinationForm");
 var wishlist = document.getElementById("container");
