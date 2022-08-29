@@ -22,12 +22,11 @@ async function addCard(event){
 // Creates the card with the information from the user.
 async function buildNewCard( destination, location, description){
      var col = document.createElement("div");
-     col.classList.add("col");
+     col.classList.add("col", "m-2");
 
      var card = document.createElement("div");
      card.classList.add("card", "shadow");
      card.style.width = "17rem";
-     card.style.float="right";
      card.style.marginRight = "10px";
 
      var image = document.createElement("img");
@@ -111,6 +110,8 @@ function deleteCard(event){
 
 // Gets all values by querying photos by destination and the location
 async function getAllImages(searchVal, searchValTwo){
+    searchVal = searchVal.replace(/ /g, "");
+    searchValTwo = searchValTwo.replace(/ /g, "");
     var response =  await fetch('https://api.unsplash.com/search/photos?page=1&query=' +searchVal+','+searchValTwo +'&client_id='+ API_KEY);
     if(response.status == "200"){
         return response.json();
