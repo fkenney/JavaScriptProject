@@ -135,4 +135,4 @@ async function getImageURL(destination, location){
     finally{
         return image;
     }
-}
+} 
