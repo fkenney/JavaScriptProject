@@ -1,4 +1,19 @@
 .card-img, .card-img-bottom, .card-img-top{
+    height: 175px;
+}
+.card{
+    width: 17rem;
+    border: 1px solid rgb(172, 172, 172);
+    opacity: .8;
+}
 
-    height: 200px;
+#view{
+    margin-left:110px;
+}
+button.btn-danger{
+    float:right;
+}
+
+.card:hover{
+    opacity: 1;
 }
