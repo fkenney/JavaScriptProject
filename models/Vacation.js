@@ -11,4 +11,4 @@ const vacationSchema = new Schema({
 })
 
 
-export default mongoose.model('Vacation', vacationSchema)
+export default mongoose.model('Vacation', vacationSchema) 
